@@ -1,0 +1,677 @@
+
+/* ======== M I S E    E N   P A G E ======== */
+    body{
+
+        background-image: linear-gradient(#171a23, #003456);
+        color: #000305;
+        font-size: 87.5%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .body{
+        margin: 0 auto;
+        width: 90%;
+        clear: both;
+    }
+/* ======== F I N   M I S E    E N   P A G E ======== */
+
+
+/* ========== E N  T Ê T E  /  A C C U E I L ========== */
+
+    /* ========== I M A G E   D ' A C C U E I L  ========== */
+        .header img{
+            width: 100%;
+            height: 580px;
+            margin: 4% 0% 0% 0%;
+        }
+        .chatter{
+            font-size: 20px;
+            text-decoration: none;
+            color: #00c2f4;
+            padding: 5px 68px;
+            background-image: linear-gradient(310deg, #06113a,  #9e6d53, #06113a);
+            position: absolute;
+            top: 80%;
+            right: 8.5%;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px 0 rgba(22, 24, 28, 0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+        }
+        .chatter:hover,
+        .chatter:focus{
+            color: #00c2f4;
+            background: #010101;
+            box-shadow: 0 5px 10px 0 rgba(22, 24, 28, 0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+        }
+    /* ========== F I N   I M A G E   D ' A C C U E I L  ========== */
+
+    /* ========= B A R R E   D E   N A V I G A T I O N ========= */
+
+        .menu {
+            text-align: right;
+            text-transform: uppercase;
+            font-weight: 500;
+            position: absolute;
+            top: 9%;
+            right: 7.5%;
+            
+         }
+        .menu * {
+            box-sizing: border-box;
+            -webkit-transition: all 0.35s ease;
+            transition: all 0.35s ease;
+        }
+        .menu li {
+            display: inline-block;
+            list-style: outside none none;
+            margin: 0 1em;
+            overflow: hidden;
+            font-family: 'Zen Kurenaido', sans-serif;
+            font-family: 'Zen Maru Gothic', sans-serif;
+        }
+        .menu a {
+            padding: 0.3em 0;
+            color: #e67e22;
+            font-size: 12px;
+            position: relative;
+            display: inline-block;
+            letter-spacing: 1px;
+            margin: 0;
+            font-size: 12px;
+            text-decoration: none;
+            
+        }
+        .menu a:before,
+        .menu a:after {
+            position: absolute;
+            -webkit-transition: all 0.35s ease;
+            transition: all 0.35s ease;
+        }
+        .menu a:before {
+            bottom: 100%;
+            display: block;
+            height: 3px;
+            width: 100%;
+            content: "";
+            background-color: #e67e22;
+        }
+        .menu a:after {
+            padding: 0.3em 0;
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            content: attr(data-hover);
+            color: #fff;
+            white-space: nowrap;
+        }
+        .menu li:hover a,
+        .menu .active a {
+            transform: translateY(100%);
+            color: #efcfb9;
+        }
+    /* ======== F I N   B A R R E   D E   N A V I G A T I O N ========= */
+
+/* ========== F I N   E N   T Ê T E  /  A C C U E I L ========== */
+
+
+
+/*  ========= C O N T E N U E   P R I N C I P A L E ========== */
+    .contenuPrincipal{
+        border-radius: 5px;
+    }
+
+    .contenu{
+        width: 100%;
+    } 
+
+    .en-tete{
+        margin-top: 1%;
+        font-family: 'Ephesis', sans-serif;
+        letter-spacing: 2.8px;
+        font-size: 6.7em;
+        text-align: center;
+        font-weight: normal;
+        color: #fff;
+    }
+
+    .voiture{
+        display: inline-block;
+    }
+
+    .voiture-wrapper{
+        position: relative;
+        width: 100%;
+        width: auto;
+        padding: 0;
+        margin: -8% 0% 1% 0%;
+    }
+
+    .voiture .liste-voiture{    
+        display: inline-block;
+        margin: 20px 17px;
+        border-radius: 50px;
+        box-sizing: border-box;
+        transition-duration: 1s;
+    }
+
+    .image-voiture-Lamborghini, 
+    .image-voiture-Mercedes,
+    .image-voiture-Maseratti,
+    .image-voiture-Audi,
+    .image-voiture-Bugati,
+    .image-voiture-Bentley,
+    .image-voiture-Ferrari,
+    .image-voiture-Roll{
+        width: 250px;
+        height: 200px;
+        box-shadow: 0 5px 10px 0 rgba(22, 24, 28, 0.3), 0 7px 21px 0 rgba(0,0,0,0.6);
+    }
+
+    .image-voiture-Lamborghini img, 
+    .image-voiture-Mercedes img,
+    .image-voiture-Maseratti img,
+    .image-voiture-Audi img,
+    .image-voiture-Bugati img,
+    .image-voiture-Bentley img,
+    .image-voiture-Ferrari img,
+    .image-voiture-Roll img{
+        display: block;
+        width: 250px;
+        height: 150px;
+    }
+
+    .infos-gauche{
+        float: left;
+        padding: 2px;
+    }
+
+    .infos-gauche h1{
+        margin-top: 0px;
+        margin-left: 10px;
+        font-family: 'Permanent Marker', sans-serif;
+        letter-spacing: 0.5px;
+        font-size: 20px;
+        color:   #9e6d53;
+        cursor: pointer;
+    }
+
+    .infos-gauche p{
+        margin-top: -14px;
+        margin-left: 10px;
+        font-family: 'Permanent Marker', arial;
+        letter-spacing: .5px;
+        font-size: 15px;
+        color: #00c2f4;
+        cursor: pointer;
+    }
+
+    .image-voiture-Lamborghini a,
+    .image-voiture-Mercedes a,
+    .image-voiture-Maseratti a,
+    .image-voiture-Audi a,
+    .image-voiture-Bugati a,
+    .image-voiture-Bentley a,
+    .image-voiture-Ferrari a,
+    .image-voiture-Roll a{
+        text-decoration: none;
+        border: none;
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding: 15px 7px;
+        background-image: linear-gradient(310deg, #06113a,  #00c2f4, #06113a);
+        font-family: 'Comfortaa', sans-serif;
+        border-left: 2px solid #9e6d53;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        cursor: pointer;
+        float: right;
+    }
+
+    .image-voiture-Lamborghini a:hover, 
+    .image-voiture-Mercedes a:hover,
+    .image-voiture-Maseratti a:hover,
+    .image-voiture-Audi a:hover,
+    .image-voiture-Bugati a:hover,
+    .image-voiture-Bentley a:hover,
+    .image-voiture-Ferrari a:hover,
+    .image-voiture-Roll a:hover{
+        color: #fff;
+        background: #00c2f4;
+        box-shadow: 0 5px 10px 0 rgba(22, 24, 28, 0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+    }
+
+    .image-voiture-Lamborghini:hover,
+    .image-voiture-Mercedes:hover,
+    .image-voiture-Maseratti:hover,
+    .image-voiture-Audi:hover,
+    .image-voiture-Bugati:hover,
+    .image-voiture-Bentley:hover,
+    .image-voiture-Ferrari:hover,
+    .image-voiture-Roll:hover{
+        box-shadow: -2px -4px 10px rgba(26, 25, 25, 0.5), 3px 2px 10px rgba(255, 255, 255, 0.3);
+    }
+
+    /* I N F O R MA T I O N   S U R   L' E Q U I P E */
+    .infos-Lamborghini,
+    .infos-Mercedes,
+    .infos-Maseratti,
+    .infos-Audi,
+    .infos-Bugati,
+    .infos-Bentley,
+    .infos-Ferrari,
+    .infos-Roll{ 
+        visibility: hidden;
+        display: table;
+        position: fixed;
+        top: 25%;
+        left: 21%;
+        width: 50%;
+        height: auto;
+        padding: 30px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 3px 10px 50px rgba(0, 0, 0, 0.9), 4px 11px 18px rgba(56, 56, 56, 0.2);
+    }
+
+    .infos-Lamborghini:target,
+    .infos-Mercedes:target,
+    .infos-Maseratti:target,
+    .infos-Audi:target,
+    .infos-Bugati:target,
+    .infos-Bentley:target,
+    .infos-Ferrari:target,
+    .infos-Roll:target{
+        visibility: visible;
+    }
+
+    .btn-fermer{
+        text-decoration: none;
+        position: absolute;
+        top: -4%;
+        right: -3%;
+        font-size: 1.55em;
+        font-weight: 300;
+        color: white;
+        border-radius:3em;
+        font-family: 'Comfortaa', cursive;
+        box-shadow:0 0 20px #000;
+        padding:.4em .7em;
+        background: #f70a0a;
+    }
+
+    .btn-fermer:hover{
+        color: #f70a0a;
+        background: #fff;
+    }
+
+    .infos-alert{
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .infos-voiture h1{
+        font-size: 3em;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: -50px;
+        color: #1135b8;
+        font-family: 'Fredoka One', cursive;
+        letter-spacing: 3px;
+        text-shadow:0 0 20px #67189d;
+    }
+
+    .infos-alert p{
+        font-size: 1em;
+        margin-bottom: 1em;
+        font-family: 'Klee One', cursive;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .infos-voiture .image-infos{
+        height: 90px;
+        width: 80px;
+        position: relative;
+        float: left;
+        margin: 10px;
+    }
+
+    .infos-voiture .image-formation{
+        height: 130px;
+        width: 250px;
+        position: relative;
+        float: right;
+        margin-top: -30px;
+        border-top-right-radius: 25px;
+    }
+
+    .voir_plus{
+        padding: 10px 100px;
+        text-decoration: none;
+        font-size: 15px;
+        background-image: linear-gradient(310deg, #06113a,  #00c2f4, #06113a);
+        color: white;
+        border-radius: 10px;
+        letter-spacing: 2px;
+    }
+
+    .voir_plus:hover{
+        background-image: linear-gradient(410deg, #06113a,  #9e6d53, #06113a);
+        transition: 1s;
+    }
+
+/*  ========= F I N   C O N T E N U E   P R I N C I P A L E ========== */
+
+
+
+/* ======== P I E D   D E   P A G E ========= */
+   .footerPrincipal{
+        width: 96%;
+        float: left;
+        background-color: #13bdaf;
+        margin-right: 10%;
+        padding: .5% 2%;
+        margin-top: 2%;
+    }
+    .footer{
+        text-align: center;
+        font-weight: bolder;
+        clear: both;
+    }
+    .footer h3{
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 1.5px;
+    }
+    .footer ul{
+        width: 95%;
+    }
+    .footer li{
+        list-style-type: none;
+        display: block;
+        margin: 2% 2% 0 2%;
+    }
+    .footer a{
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer a:hover{
+        color: #fff;
+    }
+    .footerPrincipal p{
+        margin-top: 5%;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+/* ======= F I N   P I E D   D E   P A G E ======== */
+
+
+
+
+
+
+
+/* ======= G E S T I O N   D E   L A   R E S P O N S I V I T É ========== */
+
+        /*  ==========*********    É C R A N    S U P É R I E U R   Á   1 2 9 0  *********===========*/
+        @media only screen and (max-width: 1290px){
+            
+            .image-voiture-Lamborghini, 
+            .image-voiture-Mercedes,
+            .image-voiture-Maseratti,
+            .image-voiture-Audi,
+            .image-voiture-Bugati,
+            .image-voiture-Bentley,
+            .image-voiture-Ferrari,
+            .image-voiture-Roll{
+                width: 200px;
+                height: 190px;
+            }
+
+            .image-voiture-Lamborghini img, 
+            .image-voiture-Mercedes img,
+            .image-voiture-Maseratti img,
+            .image-voiture-Audi img,
+            .image-voiture-Bugati img,
+            .image-voiture-Bentley img,
+            .image-voiture-Ferrari img,
+            .image-voiture-Roll img{
+                width: 200px;
+            }
+
+            .infos-gauche{
+                float: left;
+                padding: 2px;
+            }
+            .infos-gauche h1{
+                font-size: 17px;
+            }
+            .infos-gauche p{
+                font-size: 10px;
+            }
+            .image-voiture-Lamborghini a,
+            .image-voiture-Mercedes a,
+            .image-voiture-Maseratti a,
+            .image-voiture-Audi a,
+            .image-voiture-Bugati a,
+            .image-voiture-Bentley a,
+            .image-voiture-Ferrari a,
+            .image-voiture-Roll a{
+                font-size: .9rem;
+                padding: 11px 1px;
+            }
+            .voiture .liste-voiture{    
+                margin: 20px 20px;
+            }
+        }
+         /*  ==========*********    É C R A N    S U P É R I E U R   Á   7 9 0  *********===========*/
+
+
+
+        /*  ==========*********    É C R A N    S U P É R I E U R   Á   9 9 0  *********===========*/
+        @media only screen and (max-width: 990px){
+            .chatter{
+                font-size: 13px;
+                padding: 5px 35px;
+                top: 78%;
+            }
+            .voiture .liste-voiture{    
+                margin: 20px 20px;
+            }
+        }
+         /*  ==========*********    É C R A N    S U P É R I E U R   Á   7 9 0  *********===========*/
+
+
+    /*  ==========*********    É C R A N    S U P É R I E U R   Á   7 9 0  *********===========*/
+        @media only screen and (max-width: 790px){
+            .body{
+                margin: 0 auto;
+                width: 90%;
+                clear: both;
+            }
+            .header img{
+                width: 100%;
+                height: 300px;
+            }
+            .chatter{
+                font-size: 13px;
+                padding: 5px 28px;
+                top: 43%;
+            }
+            .menu {
+                top: 4%;
+            }
+            .menu li {
+                margin: 0 .5em;
+            }
+            .menu a {
+                font-size: 10px;
+                letter-spacing: 0.5px;
+            }
+            .menu a:before {
+                bottom: 110%;
+                height: 2px;
+            }
+            .menu a:after {
+                bottom: 110%;
+            }
+            .contenuPrincipal{
+                border-radius: 5px;
+            }
+            .contenu{
+                width: 100%;
+            } 
+            .en-tete{
+                font-size: 4.7em;
+            }
+            .voiture .liste-voiture{    
+                margin: 20px 20px;
+            }
+            .image-voiture-Lamborghini, 
+            .image-voiture-Mercedes,
+            .image-voiture-Maseratti,
+            .image-voiture-Audi,
+            .image-voiture-Bugati,
+            .image-voiture-Bentley,
+            .image-voiture-Ferrari,
+            .image-voiture-Roll{
+                width: 220px;
+                height: 190px;
+            }
+            .image-voiture-Lamborghini img, 
+            .image-voiture-Mercedes img,
+            .image-voiture-Maseratti img,
+            .image-voiture-Audi img,
+            .image-voiture-Bugati img,
+            .image-voiture-Bentley img,
+            .image-voiture-Ferrari img,
+            .image-voiture-Roll img{
+                width: 220px;
+            }
+
+            .infos-gauche{
+                float: left;
+                padding: 2px;
+            }
+            .infos-gauche h1{
+                font-size: 17px;
+            }
+            .infos-gauche p{
+                font-size: 10px;
+            }
+            .image-voiture-Lamborghini a,
+            .image-voiture-Mercedes a,
+            .image-voiture-Maseratti a,
+            .image-voiture-Audi a,
+            .image-voiture-Bugati a,
+            .image-voiture-Bentley a,
+            .image-voiture-Ferrari a,
+            .image-voiture-Roll a{
+                font-size: .9rem;
+                padding: 11px 1px;
+            }
+            .voir_plus{
+                padding: 6px 60px;
+                font-size: 13px;
+            }
+            
+            .footerPrincipal{
+                margin-top: 10%;
+            }
+            .footerPrincipal p{
+                font-size: 15px;
+            }
+    }
+    /*  ==========*********   F I N    É C R A N    S U P É R I E U R   Á   7 9 0  *********===========*/
+
+    /*  ==========*********    É C R A N    S U P É R I E U R   Á   3 2 0  *********===========*/
+        @media only screen and (max-width: 520px){
+            .chatter{
+                font-size: 10px;
+                padding: 5px 18px;
+                top: 41%;
+            }
+            .menu {
+                top: 2%;
+            }
+            .menu li {
+                margin: 0 .3em;
+            }
+            .menu a {
+                font-size: 8px;
+                letter-spacing: 0.5px;
+            }
+            .menu a:before {
+                bottom: 150%;
+                height: 1px;
+            }
+            .menu a:after {
+                bottom: 130%;
+            }
+            .en-tete{
+                font-size: 2.7em;
+            }
+            .voiture .liste-voiture{    
+                margin: 20px 5px;
+            }
+            .image-voiture-Lamborghini, 
+            .image-voiture-Mercedes,
+            .image-voiture-Maseratti,
+            .image-voiture-Audi,
+            .image-voiture-Bugati,
+            .image-voiture-Bentley,
+            .image-voiture-Ferrari,
+            .image-voiture-Roll{
+                width: 168px;
+                height: 183px;
+            }
+            .image-voiture-Lamborghini img, 
+            .image-voiture-Mercedes img,
+            .image-voiture-Maseratti img,
+            .image-voiture-Audi img,
+            .image-voiture-Bugati img,
+            .image-voiture-Bentley img,
+            .image-voiture-Ferrari img,
+            .image-voiture-Roll img{
+                width: 168px;
+            }
+            .infos-gauche{
+                float: left;
+                padding: 2px;
+            }
+            .infos-gauche h1{
+                font-size: 12px;
+            }
+            .infos-gauche p{
+                padding-top: 5px;
+                font-size: 8px;
+            }
+            .image-voiture-Lamborghini a,
+            .image-voiture-Mercedes a,
+            .image-voiture-Maseratti a,
+            .image-voiture-Audi a,
+            .image-voiture-Bugati a,
+            .image-voiture-Bentley a,
+            .image-voiture-Ferrari a,
+            .image-voiture-Roll a{
+                font-size: .7rem;
+                padding: 10px 3px;
+            }
+            .voir_plus{
+                padding: 6px 50px;
+                font-size: 13px;
+            }
+            
+            .footerPrincipal{
+                margin-top: 10%;
+            }
+            .footerPrincipal p{
+                font-size: 10px;
+            }
+        }
+    /*  ==========*********    F I N    É C R A N    S U P É R I E U R   Á   3 2 0  *********===========*/
+
+/* ======= F I N   G E S T I O N   D E   L A   R E S P O N S I V I T É ========== */
+

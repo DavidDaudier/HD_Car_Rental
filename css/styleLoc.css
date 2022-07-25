@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(318deg,#171a23, #003456);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 92vh;
+}
+
+
+/* ========= B A R R E   D E   N A V I G A T I O N ========= */
+
+    .menu{
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top: 50px;
+      font-size: 17px;
+    }
+      
+    .menu * {
+        box-sizing: border-box;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+    .menu li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0 1em;
+        overflow: hidden;
+    }
+    .menu a {
+        padding: 0.3em 0;
+        color: #e67e22;
+        font-size: 12px;
+        position: relative;
+        display: inline-block;
+        letter-spacing: 1px;
+        margin: 0;
+        text-decoration: none;
+    }
+    .menu a:before,
+    .menu a:after {
+        position: absolute;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+    .menu a:before {
+        bottom: 100%;
+        display: block;
+        height: 3px;
+        width: 100%;
+        content: "";
+        background-color: #e67e22;
+    }
+    .menu a:after {
+        padding: 0.3em 0;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        content: attr(data-hover);
+        color: #fff;
+        white-space: nowrap;
+    }
+    .menu li:hover a,
+    .menu .active a {
+        transform: translateY(100%);
+        color: #efcfb9;
+    } 
+
+    .liste{
+      text-align: center;
+      margin-top: 30px;
+      font-family: 'Parisienne', serif;
+      /* font-family: 'Ephesis', sans-serif; */
+      color: #fff;
+      font-size: 40px;
+      letter-spacing: 3px;
+      font-weight: lighter;
+    }
+         
+    
+
+
+/* === C O N T E N U E    P R I N C I P A L === */
+    .contenue{
+      width: 100%;
+    }
+
+    .contenue_princcipale {
+        overflow-y: auto;
+        height: 69vh;
+        width: 100%;
+    }
+
+    .contenue_princcipale::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    .contenue_princcipale::-webkit-scrollbar:vertical {
+        width: 21px;
+    }
+
+    .contenue_princcipale::-webkit-scrollbar:horizontal {
+        height: 5px;
+    }
+
+    .contenue_princcipale::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        border: 2px solid #00c2f4;
+        background-image: linear-gradient(310deg, #06113a,  #e67e22, #06113a);
+    }
+
+    table{
+        width: 90%;
+        margin: auto;
+        cursor: pointer;
+        border-collapse: collapse;
+        background-image: linear-gradient(310deg,   #f1a664, #121c3f, #00c2f4);
+    }
+
+    thead tr th{
+        padding: 10px 15px;
+        font-size: 17px;
+        background: #2a2f44;
+        color: #0289d1;
+        border-bottom: 5px solid #00c2f4;
+    }
+
+    td{
+        text-align: center;
+        font-family: 'Zen Kurenaido', sans-serif;
+        letter-spacing: 1px;
+        padding: 7px 15px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .description{
+        text-align: left;
+    }
+
+    tbody tr:hover{
+        background-image: linear-gradient(310deg, #06113a,  #00c2f4, #06113a);
+    }
+
+    .img-voiture{
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 3px 10px 50px rgba(0, 0, 0, 0.9), 4px 11px 18px rgba(56, 56, 56, 0.2);
+    }
+
+    .btn-louer{
+      font-size: 15px;
+      color: white;
+      background-image: linear-gradient(310deg, #06113a,  #00c2f4, #06113a);
+      border-radius: 25px;
+      padding: 5px 14px;
+      font-weight: bold;
+      border: 1px solid rgb(255, 255, 255);
+    }
+
+    .btn-louer:focus,
+    .btn-louer:hover{
+    color: #fff;
+    background: none;
+    border: 1px solid #fff; 
+    box-shadow: 0 5px 10px 0 rgba(255, 254, 194, 0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+    }
+
+    tr:nth-child(odd){
+      background: rgba(43, 50, 78, .3);
+    }
+
+    tr:nth-child(even){
+      background: rgba(43, 50, 78, .3);
+    }
+
+    .mod{
+    background: none;
+    }
+/* === F I N    C O N T E N U E    P R I N C I P A L === */
+
+
