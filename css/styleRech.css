@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap);
+
+
 *{
   margin: 0;
   padding: 0;
@@ -8,79 +14,122 @@
 }
 
 body{
-   background-image: linear-gradient(318deg,#171a23, #003456);
-    background-size: cover;
+    height: 110vh;
+    background-image: url(../img/voitures/banner-loc_rech.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
-    height: 92vh;
+    background-size: cover;
+    width: 100%;
 }
 
 
 /* ========= B A R R E   D E   N A V I G A T I O N   &   R E C H E R C H E  ========= */
+/* .hero_area3 {
+    height: 100vh;
+    background-image: url(../img/voitures/banner-loc_rech.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  } */
+.hero_area.sub_pages {
+    height: auto;
+  }
+  
+  .header_section {}
+  
+  .header_section .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .header_section .nav_container {
+    margin: 0 auto;
+  }
+  
+  .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 30px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+  }
+  .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link:hover,
+  .custom_nav-container.navbar-expand-lg .navbar-nav .active {
+    color: #fc5d35;
+  }
+  
+  a{
+    text-decoration: none;
+  }
 
-    .menu{
-      width: 100%;
-      text-transform: uppercase;
-      font-weight: 500;
-      margin-top: 50px;
-      font-size: 17px;
-    }
-      
-    .menu * {
-        box-sizing: border-box;
-        -webkit-transition: all 0.35s ease;
-        transition: all 0.35s ease;
-    }
-
-    .menu li {
-        display: inline-block;
-        list-style: outside none none;
-        margin: 0 1em;
-        overflow: hidden;
-    }
-
-    .menu a {
-        padding: 0.3em 0;
-        color: #e67e22;
-        font-size: 12px;
-        position: relative;
-        display: inline-block;
-        letter-spacing: 1px;
-        margin: 0;
-        text-decoration: none;
-    }
-
-    .menu a:before,
-    .menu a:after {
-        position: absolute;
-        -webkit-transition: all 0.35s ease;
-        transition: all 0.35s ease;
-    }
-
-    .menu a:before {
-        bottom: 100%;
-        display: block;
-        height: 3px;
-        width: 100%;
-        content: "";
-        background-color: #e67e22;
-    }
-
-    .menu a:after {
-        padding: 0.3em 0;
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        content: attr(data-hover);
-        color: #fff;
-        white-space: nowrap;
-    }
-
-    .menu li:hover a,
-    .menu .active a {
-        transform: translateY(100%);
-        color: #efcfb9;
-    } 
-
+  .btn,
+  .btn:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+  
+  .navbar-brand,
+  .navbar-brand:hover {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    width: 60px;
+    margin-right: 5px;
+  }
+  
+  .navbar-brand span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00ccfb;
+    margin-top: 5px;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .custom_nav-container {
+    z-index: 99999;
+    padding: 15px 0;
+  }
+  
+  .custom_nav-container .navbar-toggler {
+    outline: none;
+  }
+  
+  .custom_nav-container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../img/voitures/menu.png);
+    background-size: 55px;
+  }
+  
+  .quote_btn-container a {
+    display: inline-block;
+    padding: 5px 25px;
+    background-image: radial-gradient(circle at 0% 30%, #00ccfb, #fc5d35)!important;
+    color: #f7f7f7;
+    font-size: 14px;
+    border-radius: 15px;
+    text-transform: uppercase;
+  }
+  .quote_btn-container a:hover{
+    background-image: radial-gradient(circle at 0% 30%, #fc5d35, #00ccfb)!important;
+    /* background-image: #80bbe9; */
+    text-decoration: none;
+  }
+  .form-inline{
+    font-family: 'Zilla Slab', serif;
+    color: #fff;
+  }
+  /*end header section*/
     .liste{
         text-align: center;
         margin-top: 30px;
@@ -233,18 +282,84 @@ body{
 
 
 
+/* ======== P I E D   D E   P A G E ========= */
+/* info section */
+.layout_padding {
+  padding: 75px 0;
+}
+.info_section{
+  margin-top: 4rem;
+}
+.info_section ul {
+  padding: 0;
+}
+.info_section p{
+  color: #00c2f4;
+}
+.info_section ul li {
+  list-style-type: none;
+  margin: 3px 0;
+  color: #00c2f4;
+}
+.info_section ul li  img{
+  width: 25px;
+  margin-right: 10px;
+}
 
+.info_section h5 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  margin-left: 0rem;
+  color: #fc5d35;
+  font-family: 'Poppins', arial;
+}
+/* .active{
+  color: #fc5d35;
+} */
+.info_section .social-box {
+  margin: 25px 0;
+}
 
+.info_section .social-box img {
+  width: 35px;
+  margin-right: 5px;
+}
 
-/* -====- C O N T E N U E    V I D E O    L O I S I R -====- */
+.info_section .form_container input {
+  width: 225px;
+  height: 30px;
+}
 
-    video{
-          border-radius: 5px;
-          box-shadow: 3px 10px 50px rgba(0, 0, 0, 0.9), 4px 11px 18px rgba(56, 56, 56, 0.2);
-          width: 50%;
-          margin: 0% 5% 4% 25%;
-    }
+.info_section .form_container button {
+  /* background-color: #fc5d35; */
+  background-image: radial-gradient(circle at 0% 30%, #fc5d35, #00ccfb)!important;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 5px 30px;
+  margin-top: 15px;
+  font-size: 15px;
+}
 
-/* -====- F I N    C O N T E N U E    V I D E O    L O I S I R -====- */
+/* end info section */
+
+ .footerPrincipal{
+      width: 100%;
+      /* float: left; */
+      background-image: radial-gradient(circle at 0% 30%, #1916e6, #dc2032)!important;
+      /* margin-right: 10%; */
+      padding: .5% 2%;
+      margin-top: 2%;
+  }
+ 
+  .footerPrincipal p{
+      margin: 2% 0;
+      text-align: center;
+      color: #fff;
+      letter-spacing: 1px;
+  }
+  
+/* ======= F I N   P I E D   D E   P A G E ======== */
+
 
 

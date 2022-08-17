@@ -1,114 +1,284 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap);
 
 /* ======== M I S E    E N   P A G E ======== */
+    *{
+        padding: 0;
+        margin: 0;
+    }
     body{
-
-        background-image: linear-gradient(#171a23, #003456);
         color: #000305;
         font-size: 87.5%;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Poppins', sans-serif;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        /* background-image: linear-gradient(#171a23, #003456); */
     }
     
     .body{
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
         clear: both;
     }
 /* ======== F I N   M I S E    E N   P A G E ======== */
 
 
 /* ========== E N  T Ê T E  /  A C C U E I L ========== */
+        
+/*header section*/
+.hero_area {
+    height: 100vh;
+    background-image: url(../img/voitures/bg-ac.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .hero_area2 {
+    height: 95vh;
+    background-image: url(../img/voitures/bg-voiture.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
 
-    /* ========== I M A G E   D ' A C C U E I L  ========== */
-        .header img{
-            width: 100%;
-            height: 580px;
-            margin: 4% 0% 0% 0%;
-        }
-        .chatter{
-            font-size: 20px;
-            text-decoration: none;
-            color: #00c2f4;
-            padding: 5px 68px;
-            background-image: linear-gradient(310deg, #06113a,  #9e6d53, #06113a);
-            position: absolute;
-            top: 80%;
-            right: 8.5%;
-            border-radius: 15px;
-            box-shadow: 0 5px 10px 0 rgba(22, 24, 28, 0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
-        }
-        .chatter:hover,
-        .chatter:focus{
-            color: #00c2f4;
-            background: #010101;
-            box-shadow: 0 5px 10px 0 rgba(22, 24, 28, 0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
-        }
-    /* ========== F I N   I M A G E   D ' A C C U E I L  ========== */
+  .bg-color{
+    /* background-image: linear-gradient(#171a23, #003456); */
+  }
+  .hero_area.sub_pages {
+    height: auto;
+  }
+  
+  .header_section {}
+  
+  .header_section .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .header_section .nav_container {
+    margin: 0 auto;
+  }
+  
+  .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 30px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+  }
+  .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link:hover,
+  .custom_nav-container.navbar-expand-lg .navbar-nav .active {
+    color: #fc5d35;
+  }
+  
+  a{
+    text-decoration: none;
+  }
 
-    /* ========= B A R R E   D E   N A V I G A T I O N ========= */
+  .btn,
+  .btn:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+  
+  .navbar-brand,
+  .navbar-brand:hover {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    width: 60px;
+    margin-right: 5px;
+  }
+  
+  .navbar-brand span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00ccfb;
+    margin-top: 5px;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .custom_nav-container {
+    z-index: 99999;
+    padding: 15px 0;
+  }
+  
+  .custom_nav-container .navbar-toggler {
+    outline: none;
+  }
+  
+  .custom_nav-container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../img/voitures/menu.png);
+    background-size: 55px;
+  }
+  
+  .quote_btn-container a {
+    display: inline-block;
+    padding: 5px 25px;
+    background-image: radial-gradient(circle at 0% 30%, #00ccfb, #fc5d35)!important;
+    color: #f7f7f7;
+    font-size: 14px;
+    border-radius: 15px;
+    text-transform: uppercase;
+  }
+  .quote_btn-container a:hover{
+    background-image: radial-gradient(circle at 0% 30%, #fc5d35, #00ccfb)!important;
+    /* background-image: #80bbe9; */
+    text-decoration: none;
+  }
+  .form-inline{
+    font-family: 'Zilla Slab', serif;
+    color: #fff;
+  }
+  /*end header section*/
+  
+  /* slider section */
+  .slider_section {
+    padding-top: 6%;
+  }
+  
+  .slider_item-box {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider_item-box .container {
+    height: 100%;
+  }
+  
 
-        .menu {
-            text-align: right;
-            text-transform: uppercase;
-            font-weight: 500;
-            position: absolute;
-            top: 9%;
-            right: 7.5%;
-            
-         }
-        .menu * {
-            box-sizing: border-box;
-            -webkit-transition: all 0.35s ease;
-            transition: all 0.35s ease;
-        }
-        .menu li {
-            display: inline-block;
-            list-style: outside none none;
-            margin: 0 1em;
-            overflow: hidden;
-            font-family: 'Zen Kurenaido', sans-serif;
-            font-family: 'Zen Maru Gothic', sans-serif;
-        }
-        .menu a {
-            padding: 0.3em 0;
-            color: #e67e22;
-            font-size: 12px;
-            position: relative;
-            display: inline-block;
-            letter-spacing: 1px;
-            margin: 0;
-            font-size: 12px;
-            text-decoration: none;
-            
-        }
-        .menu a:before,
-        .menu a:after {
-            position: absolute;
-            -webkit-transition: all 0.35s ease;
-            transition: all 0.35s ease;
-        }
-        .menu a:before {
-            bottom: 100%;
-            display: block;
-            height: 3px;
-            width: 100%;
-            content: "";
-            background-color: #e67e22;
-        }
-        .menu a:after {
-            padding: 0.3em 0;
-            position: absolute;
-            bottom: 100%;
-            left: 0;
-            content: attr(data-hover);
-            color: #fff;
-            white-space: nowrap;
-        }
-        .menu li:hover a,
-        .menu .active a {
-            transform: translateY(100%);
-            color: #efcfb9;
-        }
-    /* ======== F I N   B A R R E   D E   N A V I G A T I O N ========= */
+  .slider_img-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .slider_img-box img {
+    width: 100%;
+  }
+  
+  .slider_item-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .slider_item-container .slider_item-detail {
+    /* margin-top: -2rem; */
+  }
+  
+  .slider_item-detail h1 {
+    font-weight: 700;
+    font-size: 60px;
+    width: 95%;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .slider_item-detail p {
+    margin: 25px 0;
+    color: #fff;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 200;
+    font-size: 17px;
+  }
+  
+  .slider_section #carouselExampleControls,
+  .carousel-inner,
+  .carousel-item {
+    height: 100%;
+  }
+  
+  .slider_section .custom_carousel-control {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    width: 105px;
+    transform: translateY(-50%);
+  }
+  
+  .slider_section .custom_carousel-control .carousel-control-prev,
+  .slider_section .custom_carousel-control .carousel-control-next {
+    margin: 10px 0;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: none;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+  }
+  
+  .slider_section .custom_carousel-control .carousel-control-prev {
+    background-image: url(../img/voitures/prev.png);
+    background-color: #fc5d35;
+  }
+  
+.slider_section .custom_carousel-control .carousel-control-next {
+    background-image: url(../img/voitures/next.png);
+    background-color: #00ccfb;
+}
+
+.custom_dark-btn,
+.custom_orange-btn {
+  display: inline-block;
+  padding: 10px 0;
+  text-align: center;
+  width: 145px;
+  outline: none;
+  color: #f7f7f7;
+  border: 1px solid transparent;
+  letter-spacing: 1px;
+}
+.custom_dark-btn{
+  /* margin-top: 2rem; */
+}
+
+.custom_dark-btn {
+    background-image: radial-gradient(circle at 0% 30%, #fc5d35, #00c2f4)!important;
+  /* background-color: #004c88; */
+}
+
+.custom_dark-btn:hover {
+  /* border: 1px solid #000000; */
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.custom_orange-btn {
+    /* background-image: radial-gradient(circle at 0% 30%, #fc5d35, #00ccfb)!important; */
+    background: #0d1d3e;
+    /* transition: 5s; */
+    border: 2 px solid #0d1d3e;
+}
+
+.custom_orange-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #0d1d3e;
+    background: none;
+    /* background-image: radial-gradient(circle at 0% 30%, #fc5d35, #fc5d35)!important; */
+    /* transition: 5s; */
+}
+  /* end slider section */ 
 
 /* ========== F I N   E N   T Ê T E  /  A C C U E I L ========== */
 
@@ -123,35 +293,97 @@
         width: 100%;
     } 
 
-    .en-tete{
-        margin-top: 1%;
-        font-family: 'Ephesis', sans-serif;
-        letter-spacing: 2.8px;
-        font-size: 6.7em;
-        text-align: center;
-        font-weight: normal;
-        color: #fff;
+    .section-voitures{
+        margin-bottom: 4rem;
     }
 
-    .voiture{
-        display: inline-block;
+    .en-tete{
+        /* background: #00c2f4; */
+        background-image: radial-gradient(circle at 0% 30%, #fc5d35, #00ccfb)!important;
+        padding: 2rem;
+        font-family: sans-serif;
+        text-align: left;
+        font-weight: 600;
+        color:#fff;
+        
+    }
+    .en-tete h1{
+        font-size: 2em;
+        font-family: 'Poppins', sans-serif;
+    }
+    .en-tete h1, 
+    .en-tete h5{
+        margin-left: 3.6rem;
+        text-transform: uppercase;
+    }
+    .en-tete h5{
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: 'Zilla Slab', serif;
+    }
+
+    .gradient-text{
+        background: -webkit-linear-gradient(330deg, #fc5d35 0%, #0d1d3e 25%, #fc5d35 50%, #0d1d3e 75%, #fc5d35 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'Ephesis', sans-serif;
+    font-size: 6rem;
     }
 
     .voiture-wrapper{
-        position: relative;
-        width: 100%;
-        width: auto;
-        padding: 0;
-        margin: -8% 0% 1% 0%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
     }
 
-    .voiture .liste-voiture{    
-        display: inline-block;
-        margin: 20px 17px;
-        border-radius: 50px;
-        box-sizing: border-box;
-        transition-duration: 1s;
-    }
+    .voiture-wrapper div{
+        margin: 1rem .6rem;
+      }
+
+    
+@media screen and (min-width: 700px){
+	.voiture-wrapper{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+  
+	.card-voiture{
+		margin: .5rem;
+		transition: transform .5s;
+	}
+  
+	@keyframes fadeIn {
+		from{
+			opacity: 0;
+		}
+		to{
+			opacity: 1;
+		}
+	}
+	.card-voiture:nth-child(1){
+		animation: fadeIn .5s .5s backwards;
+		/* color: #060b91; */
+	}
+	.card-voiture:nth-child(2){
+		animation: fadeIn .5s 1s backwards;
+		/* color: #060b91; */
+	}
+	.card-voiture:nth-child(3){
+		animation: fadeIn .5s 1.5s backwards;
+		/* color: #060b91; */
+	}
+	.card-voiture:nth-child(4){
+		animation: fadeIn .5s 2 s backwards;
+		/* color: #060b91; */
+	}
+	.card-voiture:hover{
+		transform: scale(1.05);
+	}
+}
 
     .image-voiture-Lamborghini, 
     .image-voiture-Mercedes,
@@ -161,8 +393,8 @@
     .image-voiture-Bentley,
     .image-voiture-Ferrari,
     .image-voiture-Roll{
-        width: 250px;
-        height: 200px;
+        width: 260px;
+        height: 205px;
         box-shadow: 0 5px 10px 0 rgba(22, 24, 28, 0.3), 0 7px 21px 0 rgba(0,0,0,0.6);
     }
 
@@ -175,7 +407,7 @@
     .image-voiture-Ferrari img,
     .image-voiture-Roll img{
         display: block;
-        width: 250px;
+        width: 260px;
         height: 150px;
     }
 
@@ -185,23 +417,28 @@
     }
 
     .infos-gauche h1{
-        margin-top: 0px;
-        margin-left: 10px;
-        font-family: 'Permanent Marker', sans-serif;
+        margin-top: -15px;
+        text-align: left;
+        font-weight: 900;
+        font-family: 'Yeseva One', cursive;
         letter-spacing: 0.5px;
         font-size: 20px;
-        color:   #9e6d53;
+        color:   #fc5d35;
         cursor: pointer;
     }
 
     .infos-gauche p{
-        margin-top: -14px;
-        margin-left: 10px;
-        font-family: 'Permanent Marker', arial;
+        font-family: 'DM Sans', sans-serif;
         letter-spacing: .5px;
-        font-size: 15px;
-        color: #00c2f4;
+        font-size: 12px;
+        color: #000;
         cursor: pointer;
+    }
+    .infos-gauche p b{
+        font-size: 12px;
+        color: #f70a0a;
+        font-family: 'Yeseva One', cursive;
+        font-weight: 700;
     }
 
     .image-voiture-Lamborghini a,
@@ -216,7 +453,7 @@
         border: none;
         font-size: 1rem;
         text-transform: uppercase;
-        padding: 15px 7px;
+        padding: 16px 7px;
         background-image: linear-gradient(310deg, #06113a,  #00c2f4, #06113a);
         font-family: 'Comfortaa', sans-serif;
         border-left: 2px solid #9e6d53;
@@ -237,115 +474,101 @@
         color: #fff;
         background: #00c2f4;
         box-shadow: 0 5px 10px 0 rgba(22, 24, 28, 0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+        text-decoration: none;
     }
 
-    .image-voiture-Lamborghini:hover,
-    .image-voiture-Mercedes:hover,
-    .image-voiture-Maseratti:hover,
-    .image-voiture-Audi:hover,
-    .image-voiture-Bugati:hover,
-    .image-voiture-Bentley:hover,
-    .image-voiture-Ferrari:hover,
-    .image-voiture-Roll:hover{
-        box-shadow: -2px -4px 10px rgba(26, 25, 25, 0.5), 3px 2px 10px rgba(255, 255, 255, 0.3);
-    }
-
-    /* I N F O R MA T I O N   S U R   L' E Q U I P E */
-    .infos-Lamborghini,
-    .infos-Mercedes,
-    .infos-Maseratti,
-    .infos-Audi,
-    .infos-Bugati,
-    .infos-Bentley,
-    .infos-Ferrari,
-    .infos-Roll{ 
+    .wrapper-infos{
         visibility: hidden;
-        display: table;
         position: fixed;
-        top: 25%;
-        left: 21%;
-        width: 50%;
-        height: auto;
-        padding: 30px;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 3px 10px 50px rgba(0, 0, 0, 0.9), 4px 11px 18px rgba(56, 56, 56, 0.2);
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background: rgba(0,0,0,0.7);
     }
 
-    .infos-Lamborghini:target,
-    .infos-Mercedes:target,
-    .infos-Maseratti:target,
-    .infos-Audi:target,
-    .infos-Bugati:target,
-    .infos-Bentley:target,
-    .infos-Ferrari:target,
-    .infos-Roll:target{
+    .wrapper-infos:target{
         visibility: visible;
     }
 
-    .btn-fermer{
+    .close{
         text-decoration: none;
         position: absolute;
-        top: -4%;
-        right: -3%;
+        top: 5%;
+        right: 36%;
         font-size: 1.55em;
         font-weight: 300;
         color: white;
-        border-radius:3em;
         font-family: 'Comfortaa', cursive;
-        box-shadow:0 0 20px #000;
-        padding:.4em .7em;
+        box-shadow: 0 0 20px #000;
+        padding: .4em .7em;
         background: #f70a0a;
+        z-index: 999;
     }
 
-    .btn-fermer:hover{
+    .close:hover{
         color: #f70a0a;
         background: #fff;
     }
-
-    .infos-alert{
-        box-sizing: border-box;
+    .lightbox-content{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        background: rgba(0,0,0,0.7);
+        top: 10%;
+        left: 20%;
+    }
+    .lightbox-content .content-left img{
+        width: 300px;
+        background: #fff;
         padding: 20px;
+        margin-top: 2rem;
     }
-
-    .infos-voiture h1{
-        font-size: 3em;
-        text-align: left;
-        font-weight: bold;
-        margin-bottom: 5px;
-        margin-top: -50px;
-        color: #1135b8;
-        font-family: 'Fredoka One', cursive;
-        letter-spacing: 3px;
-        text-shadow:0 0 20px #67189d;
+    .lightbox-content .content-right{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        font-family: 'DM Sans', sans-serif;
+        width: 300px;
+        padding: 20px;
+        color: #fff;
+        background-image: linear-gradient(#171a23, #003456); 
     }
-
-    .infos-alert p{
-        font-size: 1em;
-        margin-bottom: 1em;
-        font-family: 'Klee One', cursive;
-        font-weight: bold;
-        text-align: left;
+    .lightbox-content .content-right h4{
+        font-size: 17px;
+        font-family: 'Yeseva One', cursive;
+        letter-spacing: 1.5px;
     }
-
-    .infos-voiture .image-infos{
-        height: 90px;
-        width: 80px;
-        position: relative;
+    .lightbox-content .content-right .label-detail{
         float: left;
-        margin: 10px;
+        padding: 10px 0;
+        margin: 5px 0;
+        font-size: 13px;
     }
 
-    .infos-voiture .image-formation{
-        height: 130px;
-        width: 250px;
-        position: relative;
+    .lightbox-content .content-right .input-detail{
         float: right;
-        margin-top: -30px;
-        border-top-right-radius: 25px;
+        outline: none;
+        padding: 5px;
+        margin: 2px 0;
+        width: 48%;
+    }
+    .lightbox-content .content-right .select-detail{
+        float: right;
+        outline: none;
+        padding: 5px;
+        margin: 2px 0;
+        width: 55%;
     }
 
-    .voir_plus{
+    .voir-plus{
+        margin: 3rem 0 5rem 0;
+        text-align: center;
+    }
+    .voir-plus a{
         padding: 10px 100px;
         text-decoration: none;
         font-size: 15px;
@@ -353,58 +576,192 @@
         color: white;
         border-radius: 10px;
         letter-spacing: 2px;
+        text-decoration: none;
     }
 
-    .voir_plus:hover{
-        background-image: linear-gradient(410deg, #06113a,  #9e6d53, #06113a);
+    .voir-plus a:hover{
+        background-image: radial-gradient(circle at 0% 30%, #fc5d35, #00ccfb)!important;
+        /* background-image: linear-gradient(410deg, #06113a,  #9e6d53, #06113a); */
         transition: 1s;
+        color: #000;
+        text-decoration: none;
     }
 
 /*  ========= F I N   C O N T E N U E   P R I N C I P A L E ========== */
 
 
 
+/* service section */
+.custom_heading {
+    text-align: center;
+    font-weight: bold;
+    color: #00ccfb;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(330deg, #00ccfb 0%, #00ccfb 25%, #fc5d35 50%, #00ccfb 75%, #00ccfb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .custom_heading-text {
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+  }
+.service_section .card .card-img-top {
+    width: 100px;
+    margin: 55px auto 5px auto;
+  }
+  
+  .service_section .card {
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .service_section .card .card-title {
+    color: #fc5d35;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .service_section .card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background-color: transparent;
+  }
+  
+  .service_section .card:hover {
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  .service_section .card:hover::after {
+    background-color: #fc5d35;
+  }
+  .card-text{
+    font-family: 'Zilla Slab', serif;
+  }
+  
+  /* end service section */
+  
+
+
+/* ========= C O N T A C T ========= */
+    /* contact section */
+
+.contact_section {
+    background-image: url(../images/orange-dish.png);
+    background-repeat: no-repeat;
+    background-size: 215px;
+    background-position: right center;
+  }
+  
+  .contact_section input {
+    border: none;
+    outline: none;
+    border-bottom: .8px solid #252525;
+    width: 90%;
+    margin: 10px 0;
+  }
+  
+  .contact_form-container {
+    padding: 15px 0 15px 0;
+  
+  }
+  
+  .contact_form-container button {
+    border: none;
+    background-color: #fc5d35;
+    color: #fff;
+    padding: 8px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  /* contact section */
+
+  /* ========= C O N T A C T ========= */
+
 /* ======== P I E D   D E   P A G E ========= */
+/* info section */
+.layout_padding {
+    padding: 75px 0;
+  }
+.info_section ul {
+    padding: 0;
+  }
+  .info_section p{
+    color: #00c2f4;
+  }
+  .info_section ul li {
+    list-style-type: none;
+    margin: 3px 0;
+    color: #00c2f4;
+  }
+  .info_section ul li  img{
+    width: 25px;
+    margin-right: 10px;
+  }
+  
+  .info_section h5 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    margin-left: 0rem;
+    color: #fc5d35;
+    font-family: 'Poppins', arial;
+  }
+  /* .active{
+    color: #fc5d35;
+  } */
+  .info_section .social-box {
+    margin: 25px 0;
+  }
+  
+  .info_section .social-box img {
+    width: 35px;
+    margin-right: 5px;
+  }
+  
+  .info_section .form_container input {
+    width: 225px;
+    height: 30px;
+  }
+  
+  .info_section .form_container button {
+    /* background-color: #fc5d35; */
+    background-image: radial-gradient(circle at 0% 30%, #fc5d35, #00ccfb)!important;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 5px 30px;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  
+  /* end info section */
+  
    .footerPrincipal{
-        width: 96%;
-        float: left;
-        background-color: #13bdaf;
-        margin-right: 10%;
+        width: 100%;
+        /* float: left; */
+        background-image: radial-gradient(circle at 0% 30%, #1916e6, #dc2032)!important;
+        /* margin-right: 10%; */
         padding: .5% 2%;
         margin-top: 2%;
     }
-    .footer{
-        text-align: center;
-        font-weight: bolder;
-        clear: both;
-    }
-    .footer h3{
-        font-size: 35px;
-        font-weight: bold;
-        font-family: 'Courier New', Courier, monospace;
-        letter-spacing: 1.5px;
-    }
-    .footer ul{
-        width: 95%;
-    }
-    .footer li{
-        list-style-type: none;
-        display: block;
-        margin: 2% 2% 0 2%;
-    }
-    .footer a{
-        text-decoration: none;
-        font-size: 20px;
-        text-align: center;
-    }
-    .footer a:hover{
-        color: #fff;
-    }
+   
     .footerPrincipal p{
-        margin-top: 5%;
-        margin-bottom: 2%;
+        margin: 2% 0;
         text-align: center;
+        color: #fff;
+        letter-spacing: 1px;
     }
+    
 /* ======= F I N   P I E D   D E   P A G E ======== */
 
 
@@ -427,7 +784,7 @@
             .image-voiture-Ferrari,
             .image-voiture-Roll{
                 width: 200px;
-                height: 190px;
+                height: 205px;
             }
 
             .image-voiture-Lamborghini img, 
@@ -446,7 +803,7 @@
                 padding: 2px;
             }
             .infos-gauche h1{
-                font-size: 17px;
+                font-size: 15px;
             }
             .infos-gauche p{
                 font-size: 10px;
@@ -460,11 +817,11 @@
             .image-voiture-Ferrari a,
             .image-voiture-Roll a{
                 font-size: .9rem;
-                padding: 11px 1px;
+                padding: 17px 1px;
             }
-            .voiture .liste-voiture{    
-                margin: 20px 20px;
-            }
+            
+
+           
         }
          /*  ==========*********    É C R A N    S U P É R I E U R   Á   7 9 0  *********===========*/
 
@@ -472,14 +829,13 @@
 
         /*  ==========*********    É C R A N    S U P É R I E U R   Á   9 9 0  *********===========*/
         @media only screen and (max-width: 990px){
-            .chatter{
-                font-size: 13px;
-                padding: 5px 35px;
-                top: 78%;
+            .en-tete h1, h5{
+                margin-left: 0;
             }
-            .voiture .liste-voiture{    
-                margin: 20px 20px;
+            .en-tete h5{
+                font-size: .7rem;
             }
+    
         }
          /*  ==========*********    É C R A N    S U P É R I E U R   Á   7 9 0  *********===========*/
 
@@ -491,32 +847,9 @@
                 width: 90%;
                 clear: both;
             }
-            .header img{
-                width: 100%;
-                height: 300px;
-            }
-            .chatter{
-                font-size: 13px;
-                padding: 5px 28px;
-                top: 43%;
-            }
-            .menu {
-                top: 4%;
-            }
-            .menu li {
-                margin: 0 .5em;
-            }
-            .menu a {
-                font-size: 10px;
-                letter-spacing: 0.5px;
-            }
-            .menu a:before {
-                bottom: 110%;
-                height: 2px;
-            }
-            .menu a:after {
-                bottom: 110%;
-            }
+            .slider_item-detail h1 {
+                font-size: 40px;
+              }
             .contenuPrincipal{
                 border-radius: 5px;
             }
@@ -524,55 +857,20 @@
                 width: 100%;
             } 
             .en-tete{
-                font-size: 4.7em;
+                text-align: center;
             }
-            .voiture .liste-voiture{    
-                margin: 20px 20px;
+            .en-tete h1{
+                font-size: 1em;
+                text-align: center;
             }
-            .image-voiture-Lamborghini, 
-            .image-voiture-Mercedes,
-            .image-voiture-Maseratti,
-            .image-voiture-Audi,
-            .image-voiture-Bugati,
-            .image-voiture-Bentley,
-            .image-voiture-Ferrari,
-            .image-voiture-Roll{
-                width: 220px;
-                height: 190px;
+            .en-tete h5{
+                font-size: .7rem;
             }
-            .image-voiture-Lamborghini img, 
-            .image-voiture-Mercedes img,
-            .image-voiture-Maseratti img,
-            .image-voiture-Audi img,
-            .image-voiture-Bugati img,
-            .image-voiture-Bentley img,
-            .image-voiture-Ferrari img,
-            .image-voiture-Roll img{
-                width: 220px;
+            .en-tete h1, h5{
+                margin-left: 0;
             }
-
-            .infos-gauche{
-                float: left;
-                padding: 2px;
-            }
-            .infos-gauche h1{
-                font-size: 17px;
-            }
-            .infos-gauche p{
-                font-size: 10px;
-            }
-            .image-voiture-Lamborghini a,
-            .image-voiture-Mercedes a,
-            .image-voiture-Maseratti a,
-            .image-voiture-Audi a,
-            .image-voiture-Bugati a,
-            .image-voiture-Bentley a,
-            .image-voiture-Ferrari a,
-            .image-voiture-Roll a{
-                font-size: .9rem;
-                padding: 11px 1px;
-            }
-            .voir_plus{
+           
+            .voir-plus{
                 padding: 6px 60px;
                 font-size: 13px;
             }
@@ -587,79 +885,23 @@
     /*  ==========*********   F I N    É C R A N    S U P É R I E U R   Á   7 9 0  *********===========*/
 
     /*  ==========*********    É C R A N    S U P É R I E U R   Á   3 2 0  *********===========*/
-        @media only screen and (max-width: 520px){
-            .chatter{
-                font-size: 10px;
-                padding: 5px 18px;
-                top: 41%;
-            }
-            .menu {
-                top: 2%;
-            }
-            .menu li {
-                margin: 0 .3em;
-            }
-            .menu a {
-                font-size: 8px;
-                letter-spacing: 0.5px;
-            }
-            .menu a:before {
-                bottom: 150%;
-                height: 1px;
-            }
-            .menu a:after {
-                bottom: 130%;
-            }
+        @media only screen and (max-width: 550px){
+            
             .en-tete{
-                font-size: 2.7em;
+                text-align: center;
             }
-            .voiture .liste-voiture{    
-                margin: 20px 5px;
+            .en-tete h1{
+                font-size: 1em;
+                text-align: center;
             }
-            .image-voiture-Lamborghini, 
-            .image-voiture-Mercedes,
-            .image-voiture-Maseratti,
-            .image-voiture-Audi,
-            .image-voiture-Bugati,
-            .image-voiture-Bentley,
-            .image-voiture-Ferrari,
-            .image-voiture-Roll{
-                width: 168px;
-                height: 183px;
+            .en-tete h1, h5{
+                margin-left: 0;
             }
-            .image-voiture-Lamborghini img, 
-            .image-voiture-Mercedes img,
-            .image-voiture-Maseratti img,
-            .image-voiture-Audi img,
-            .image-voiture-Bugati img,
-            .image-voiture-Bentley img,
-            .image-voiture-Ferrari img,
-            .image-voiture-Roll img{
-                width: 168px;
-            }
-            .infos-gauche{
-                float: left;
-                padding: 2px;
-            }
-            .infos-gauche h1{
-                font-size: 12px;
-            }
-            .infos-gauche p{
-                padding-top: 5px;
-                font-size: 8px;
-            }
-            .image-voiture-Lamborghini a,
-            .image-voiture-Mercedes a,
-            .image-voiture-Maseratti a,
-            .image-voiture-Audi a,
-            .image-voiture-Bugati a,
-            .image-voiture-Bentley a,
-            .image-voiture-Ferrari a,
-            .image-voiture-Roll a{
+            .en-tete h5{
                 font-size: .7rem;
-                padding: 10px 3px;
             }
-            .voir_plus{
+           
+            .voir-plus{
                 padding: 6px 50px;
                 font-size: 13px;
             }
